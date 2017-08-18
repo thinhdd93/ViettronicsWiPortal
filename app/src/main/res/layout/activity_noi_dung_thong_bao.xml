@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.ThongBao.NoiDungThongBaoActivity">
+    <RelativeLayout
+        android:id="@+id/noidungthongbao_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/grey">
+
+        <TextView
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="Nội dung thông báo:"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:id="@+id/noidungthongbao_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/noidungthongbao_img_DinhKemFile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_attach" />
+
+            <ImageView
+                android:id="@+id/noidungthongbao_img_BinhLuan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_comment" />
+
+            <ImageView
+                android:id="@+id/noidungthongbao_img_Xoa"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_delete" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/noidungthongbao_layout_2"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noidungthongbao_TieuDe"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noidungthongbao_layout_1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Thông báo về phiếu đăng ký đi công tác"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/noidungthongbao_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noidungthongbao_TieuDe"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_personal_128" />
+
+        <TextView
+            android:id="@+id/noidungthongbao_NguoiThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="Tô Điệu Hương" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noidungthongbao_layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noidungthongbao_layout_3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_infomation_blue" />
+
+        <TextView
+            android:id="@+id/noidungthongbao_NoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="5"
+            android:text="Thực hiện chỉ đạo của Lãnh đạo Tổng Công ty, Văn phòng xin gửi thông báo về thủ tục đăng ký đi công tác tới CBNV các phòng ban biết để thực hiện \nTrân trọng " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_YKienXuLy"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noidungthongbao_layout_4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Ý kiến xử lý"
+        android:textAllCaps="true"
+        android:textColor="#f00"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/noidungthongbao_texview_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textview_YKienXuLy"
+        android:background="@color/grey" />
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/noidungthongbao_listview_binhluan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/noidungthongbao_texview_line"
+        android:paddingRight="5dp"></ListView>
+
+    <TextView
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/ban_quyen" />
+</RelativeLayout>

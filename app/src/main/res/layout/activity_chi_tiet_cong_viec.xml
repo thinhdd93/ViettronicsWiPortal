@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.CongViec.ChiTietCongViecActivity">
+    <TextView
+        android:id="@+id/congviec_title"
+        style="@style/AlertDialog.AppCompat"
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:textSize="12sp"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:text="@string/cong_viec"
+        android:textAllCaps="true" />
+    <RelativeLayout
+        android:id="@+id/congviec_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/congviec_title">
+        <TextView
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Lưu Hoàng Long đề xuất:" />
+        <LinearLayout
+            android:id="@+id/congviec_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/chitiet_congviec_DinhKemFile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_attach" />
+            <ImageView
+                android:id="@+id/chitiet_congviec_BinhLuan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_comment" />
+            <ImageView
+                android:id="@+id/chitiet_congviec_Xoa"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_delete" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/congviec_layout_2"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chitiet_congviec_TieuDe"
+        style="@style/AlertDialog.AppCompat"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/congviec_layout_1"
+        android:text="Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest." />
+    <LinearLayout
+        android:id="@+id/congviec_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/chitiet_congviec_TieuDe"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_location" />
+        <TextView
+            android:id="@+id/chitiet_congviec_DiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="Tầng 11, Tòa nhà Mipec, 229 Tây Sơn, Đống Đa, Hà Nội" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/congviec_layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/congviec_layout_3"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_alarm" />
+        <TextView
+            android:id="@+id/chitiet_congviec_NgayGiao"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="08/02/2017" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text=" - " />
+        <TextView
+            android:id="@+id/chitiet_congviec_NgayHoanThanh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="08/02/2017" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/congviec_layout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/congviec_layout_4"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_infomation_blue" />
+        <TextView
+            android:id="@+id/chitiet_congviec_NoiDung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="5"
+            android:text="In to am attended desirous raptures declared diverted confined at. Collected instantly remaining up certainly to necessary as. \nOver walk dull into son boy door went new. At or happiness commanded daughters as. Is handsome an declared at received in extended vicinity subjects.  " />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textview_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/congviec_layout_5"
+        android:background="@color/grey" />
+    <LinearLayout
+        android:id="@+id/congviec_layout_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/textview_line"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xử lý chính: \t"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/chitiet_congviec_NguoiXuLyChinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lê Anh Tuấn" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/congviec_layout_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/congviec_layout_6"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phối hợp: \t"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/chitiet_vanban_NguoiPhoiHop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Thị Bích Thủy; Nguyễn Văn Đông; Lê Đức Minh" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/congviec_layout_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/congviec_layout_7"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giám sát: \t"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/chitiet_congviec_NguoiGiamSat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Thị Thúy Ly; Nguyễn Văn Đông" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textview_YKienXuLy"
+        style="@style/AlertDialog.AppCompat"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/congviec_layout_8"
+        android:text="Ý kiến xử lý"
+        android:textAllCaps="true"
+        android:textColor="#f00" />
+    <TextView
+        android:id="@+id/texview_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textview_YKienXuLy"
+        android:background="@color/grey" />
+    <ListView
+        android:id="@+id/chitiet_listview_BinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/texview_line_2"></ListView>
+    <TextView
+        android:text="@string/ban_quyen"
+        android:paddingLeft="10dp"
+        style="@style/AlertDialog.AppCompat"
+        android:gravity="center_vertical"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

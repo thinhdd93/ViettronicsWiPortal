@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.ThongBao.ThongBaoActivity">
+    <LinearLayout
+        android:id="@+id/thongbao_layout_1"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Thông báo"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/thongbao_spinner_chucVu"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    <SearchView
+        android:background="#e2e2e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thongbao_layout_1"
+        android:id="@+id/thongbao_search_view"></SearchView>
+    <ListView
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/thongbao_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_thongBao"
+        android:layout_marginBottom="30dp"></ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/fab_button"
+        android:id="@+id/themthongbao_fab_ThemThongBao"
+        android:src="@mipmap/ic_plus_24"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/ban_quyen"
+        android:id="@+id/textView6" />
+</RelativeLayout>

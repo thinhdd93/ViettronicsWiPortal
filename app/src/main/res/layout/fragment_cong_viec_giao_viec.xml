@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <RelativeLayout
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+      android:id="@+id/congviec_title1"
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      android:text="Xử lý với chức danh: "
+      android:gravity="center"
+      android:textSize="14sp"
+      style="@style/AlertDialog.AppCompat"
+      />
+    <Spinner
+      android:id="@+id/congviec_spinner_chucvu"
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      android:gravity="center"
+      android:layout_marginLeft="11dp"
+      android:layout_alignParentTop="true"
+      android:layout_toRightOf="@+id/congviec_title1"
+      android:layout_toEndOf="@+id/congviec_title1"
+      android:layout_marginStart="11dp"></Spinner>
+    <ImageView
+      android:id="@+id/img_congviec_Send"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@mipmap/ic_send_128"
+      android:layout_width="25dp"
+      android:layout_height="25dp" />
+  </RelativeLayout>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey"/>
+  <LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      android:text="Tiêu đề: "
+      android:gravity="center"
+      android:textSize="14sp"
+      style="@style/AlertDialog.AppCompat"
+      />
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/congviec_edit_TieuDe"
+      android:hint="Tiêu đề"
+      android:textSize="13sp"
+      android:inputType="textMultiLine"
+      android:minLines="1"
+      android:maxLines="5"/>
+  </LinearLayout>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey"/>
+  <RelativeLayout
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      android:text="Nội dung xử lý: "
+      android:gravity="center"
+      android:textSize="14sp"
+      style="@style/AlertDialog.AppCompat"/>
+    <ImageView
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:src="@mipmap/ic_attach"
+      android:id="@+id/img_congviec_attach"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="10dp"/>
+  </RelativeLayout>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/grey"/>
+  <EditText
+    android:id="@+id/edit_congviec_noidung"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:gravity="top|left"
+    android:hint="Nhập nội dung"
+    android:inputType="textMultiLine"
+    android:maxLines="30"
+    android:minLines="5"
+    android:textSize="13sp" />
+
+</LinearLayout>

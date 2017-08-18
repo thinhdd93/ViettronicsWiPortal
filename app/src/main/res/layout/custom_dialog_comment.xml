@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="5dp"
+  android:orientation="vertical">
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Người gửi:"
+    style="@style/AlertDialog.AppCompat"
+    android:textSize="15sp"/>
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edit_TenCanBo"/>
+  <LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Chức vụ:"
+      style="@style/AlertDialog.AppCompat"
+      android:textSize="15sp"/>
+    <Spinner
+      android:id="@+id/dialog_spinner_ChucVu"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"></Spinner>
+  </LinearLayout>
+
+  <TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nội dung:"
+    style="@style/AlertDialog.AppCompat"
+    android:textSize="15sp"/>
+  <EditText
+    android:id="@+id/edit_BinhLuan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textMultiLine"
+    android:minLines="3"
+    android:maxLines="8"
+    android:gravity="top|left"/>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+    <Button
+      android:layout_weight="1"
+      android:layout_gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Bình luận"
+      android:id="@+id/bBinhLuan"
+      android:background="@drawable/button2"/>
+    <Button
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:background="@drawable/button2"
+      android:text="Hủy bỏ"
+      android:id="@+id/bCancel"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+
+
+
+</LinearLayout>

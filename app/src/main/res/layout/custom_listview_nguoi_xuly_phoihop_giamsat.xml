@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="horizontal"
+  android:layout_marginBottom="3dp">
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ông Lưu Hoàng Long"
+    style="@style/AlertDialog.AppCompat"
+    android:id="@+id/item_listview_hoten"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" - "
+    style="@style/AlertDialog.AppCompat"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tổng Giám đốc"
+    style="@style/AlertDialog.AppCompat"
+    android:id="@+id/item_listview_chucVu"/>
+
+</LinearLayout>

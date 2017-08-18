@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Viettronics WiPortal</string>
+    <string name="van_phong_dien_tu">PHẦN MỀM VĂN PHÒNG ĐIỆN TỬ</string>
+
+    <!--Login Screen-->
+    <string name="ten_dang_nhap">Tên đăng nhập</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="quen_mat_khau"><u>Quên mật khẩu?</u></string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string name="ten_cong_ty">Tổng Công ty CP Điện tử &amp; Tin học Việt Nam</string>
+
+    <!--Welcome Screen-->
+    <string name="app_title">Phần mềm văn phòng điện tử</string>
+    <string name="welcome">Welcome</string>
+    <string name="copyright">&#169; Copyright 2017 by Viettronics. All rights reserved</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+
+    <!--Home Activity-->
+    <string name="van_ban_den">Văn bản đến</string>
+    <string name="van_ban_di">Văn bản đi</string>
+    <string name="cong_viec">Công việc</string>
+    <string name="tai_lieu_luu_tru">Tài liệu lưu trữ</string>
+    <string name="thong_bao_noi_bo">Thông báo nội bộ</string>
+    <string name="lich_co_quan">Lịch cơ quan</string>
+    <string name="lich_ca_nhan">Lịch cá nhân</string>
+    <string name="sinh_nhat">Sinh nhật</string>
+    <string name="thong_bao_sinh_nhat">Thông báo sinh nhật</string>
+    <string name="thiet_lap">Thiết lập</string>
+    <string name="dang_xuat">Đăng xuất</string>
+
+
+    <!--Văn bản đến-->
+    <string name="cho_xu_ly">Chờ xử lý</string>
+    <string name="da_xu_ly">Đã xử lý</string>
+    <string name="tim_kiem">Tìm kiếm</string>
+
+
+    <!--Công việc Activity-->
+    <string name="giao_viec">Giao việc</string>
+    <string name="duoc_giao">Được giao</string>
+    <string name="CV_giao">CV giao</string>
+
+    <!--Spinner Chức vụ-->
+    <string-array name="spinner_chuc_vu">
+        <item>Tổng giám đốc</item>
+        <item>Phó Tổng giám đốc</item>
+        <item>Chủ tịch HĐQT</item>
+        <item>Phó Chủ tịch HĐQT</item>
+        <item>Thành viên HĐQT</item>
+        <item>Trưởng ban</item>
+        <item>Phó ban</item>
+    </string-array>
+
+    <!--Spinner Lựa chọn-->
+    <string-array name="spinner_luachon">
+        <item>Tất cả</item>
+        <item>Ban Kinh Doanh</item>
+        <item>Ban Công Nghệ</item>
+        <item>Ban Kế Hoạch Đầu Tư</item>
+        <item>Văn Phòng</item>
+        <item>Phòng kế toán</item>
+    </string-array>
+
+    <!--Lịch làm việc-->
+    <string name="lich_lam_viec">Lịch làm việc</string>
+    <string name="ban_quyen">&#169; Copyright 2017 by Viettronics. All rights reserved.</string>
+
+    <!--Danh Sach Nguoi Dung-->
+    <string name="da_chon">Đã chọn</string>
+    <string name="danh_sach">Danh sách</string>
+    <string name="dong_bo">Đồng bộ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_location">Map</string>
+</resources>

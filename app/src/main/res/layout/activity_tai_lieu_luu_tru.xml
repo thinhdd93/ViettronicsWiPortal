@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.TaiLieuLuuTru.TaiLieuLuuTruActivity">
+    <LinearLayout
+        android:id="@+id/tailieu_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tailieu_title1"
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="TÀI LIỆU LƯU TRỮ"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/tailieu_spinner_luachon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/tailieu_title1"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"></Spinner>
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchview_tailieu"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tailieu_layout_1"
+        android:layout_marginBottom="5dp"
+        android:queryHint="Tìm kiếm"></SearchView>
+
+    <ListView
+        android:id="@+id/listview_TaiLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchview_tailieu"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"></ListView>
+
+    <TextView
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/ban_quyen" />
+</RelativeLayout>

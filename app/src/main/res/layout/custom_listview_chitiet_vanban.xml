@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="#dadada">
+      <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:text="Thông tin văn bản đến:" />
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <ImageView
+          android:id="@+id/img_attach"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_weight="1"
+          android:src="@mipmap/ic_attach" />
+        <ImageView
+          android:id="@+id/img_comment"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_weight="1"
+          android:layout_marginLeft="7dp"
+          android:src="@mipmap/ic_comment" />
+        <ImageView
+          android:id="@+id/img_adduser"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_weight="1"
+          android:layout_marginLeft="7dp"
+          android:layout_marginRight="5dp"
+          android:src="@mipmap/ic_add_user" />
+      </LinearLayout>
+    </RelativeLayout>
+    <TextView
+      android:layout_marginTop="5dp"
+      android:id="@+id/textView2"
+      style="@style/AlertDialog.AppCompat"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="3dp"
+      android:maxLines="3"
+      android:text="Nghị Quyết của Hội Đồng Quản Trị Tổng Công ty Điện tử và Tin học Việt Nam" />
+    <LinearLayout
+      android:weightSum="3"
+      android:layout_marginTop="3dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="3dp"
+      android:orientation="horizontal">
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Độ mật: "
+          android:textSize="12sp" />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Thường"
+          android:textSize="12sp" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:text="Độ khẩn: "
+          android:textSize="12sp" />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Thường"
+          android:textSize="12sp" />
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:text="Ngày đến: "
+          android:textSize="12sp" />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="28/07/2017"
+          android:textSize="12sp" />
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:orientation="horizontal">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn vị ban hành: "
+        android:textSize="12sp" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="Tổng Công ty CP Điện tử và Tin học Việt Nam"
+        android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="3dp"
+      android:orientation="horizontal">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày ban hành: "
+        android:textSize="12sp" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27/07/2017"
+        android:textSize="12sp" />
+      <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời hạn giải quyết: " />
+      <TextView
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27/08/2017" />
+    </LinearLayout>
+    <TextView
+      android:layout_marginTop="3dp"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#666565"/>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_margin="5dp">
+      <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Bút phê:"
+        android:textColor="@color/colorPrimary"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ông Lưu Hoàng Long"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp">
+      <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="CC:"
+        android:textColor="@color/colorPrimary"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:text="Ông Nguyễn Quốc Huy; Ông Nguyễn Anh Tùng; Bà Đỗ Thị Thúy Hương; Ông Vũ Hải Vĩnh;"/>
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/textView3"
+      style="@style/AlertDialog.AppCompat"
+      android:textStyle="bold|italic"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="5dp"
+      android:text="Ý kiến chỉ đạo và xử lý"
+      android:textAllCaps="true"
+      android:textColor="#f00" />
+    <TextView
+      android:layout_marginTop="3dp"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#666565"
+      android:layout_marginBottom="3dp"/>
+    <ListView
+      android:layout_marginLeft="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/detail_YKienChiDao"></ListView>
+  </LinearLayout>

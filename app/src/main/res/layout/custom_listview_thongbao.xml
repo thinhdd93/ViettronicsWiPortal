@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="3dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/thongbao_TieuDe"
+        style="@style/AlertDialog.AppCompat"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="Thông báo về việc đăng ký đi công tác" />
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/thongbao_img_NguoiUpload"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/ic_personal_128" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thongbao_txt_NguoiUpload"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/thongbao_img_NguoiUpload"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text="Tô Điệu Hương"/>
+
+        <ImageView
+            android:id="@+id/thongbao_img_NgayUpload"
+            android:layout_width="15dp"
+            android:layout_toRightOf="@id/thongbao_txt_NguoiUpload"
+            android:layout_marginLeft="20dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/ic_clock" />
+        <TextView
+            android:id="@+id/thongbao_txt_NgayUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/thongbao_img_NgayUpload"
+            android:text="03/08/2017" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_eye"
+            android:id="@+id/thongbao_img_view"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toLeftOf="@id/thongbao_img_view"
+            android:src="@mipmap/ic_attach"
+            android:layout_marginRight="10dp"
+            android:id="@+id/thongbao_img_attach"/>
+    </RelativeLayout>
+</LinearLayout>

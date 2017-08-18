@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/menu_trang_chu"
+            android:title="Trang chủ"
+            android:icon="@mipmap/ic_homepage"/>
+    </group>
+    <item android:title="@string/van_ban_den">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_list_128"
+                android:id="@+id/menu_van_ban_den_cho_xu_ly"
+                android:title="Văn bản đến chờ xử lý" />
+            <item
+                android:icon="@mipmap/ic_list_128"
+                android:id="@+id/menu_van_ban_den_da_xu_ly"
+                android:title="Văn bản đến đã xử lý" />
+            <item
+                android:icon="@mipmap/ic_search_128"
+                android:id="@+id/menu_tim_kiem_van_ban_den"
+                android:title="Tìm kiếm văn bản đến" />
+        </menu>
+    </item>
+    <item android:title="@string/van_ban_di">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_list_128"
+                android:id="@+id/menu_van_ban_di_cho_xu_ly"
+                android:title="Văn bản đi chờ xử lý" />
+            <item
+                android:icon="@mipmap/ic_list_128"
+                android:id="@+id/menu_van_ban_di_da_xu_ly"
+                android:title="Văn bản đi đã xử lý" />
+            <item
+                android:icon="@mipmap/ic_search_128"
+                android:id="@+id/menu_tim_kiem_van_ban_di"
+                android:title="Tìm kiếm văn bản đi" />
+        </menu>
+    </item>
+    <item android:title="@string/cong_viec">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_list_128"
+                android:id="@+id/menu_danh_sach_cong_viec"
+                android:title="Danh sách công việc" />
+            <item
+                android:icon="@mipmap/ic_add_circle_128"
+                android:id="@+id/menu_giao_viec"
+                android:title="Giao việc" />
+            <item
+                android:icon="@mipmap/ic_search_128"
+                android:id="@+id/menu_tim_kiem_cong_viec"
+                android:title="Tìm kiếm" />
+        </menu>
+    </item>
+    <item android:title="@string/tai_lieu_luu_tru">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_search_128"
+                android:id="@+id/menu_tim_kiem_tra_cuu"
+                android:title="Tìm kiếm, tra cứu" />
+            <item
+                android:icon="@mipmap/ic_add_document_128"
+                android:id="@+id/menu_them_tai_lieu"
+                android:title="Thêm tài liệu" />
+        </menu>
+    </item>
+    <item android:title="@string/thong_bao_noi_bo">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_notificaiton_128"
+                android:id="@+id/menu_thong_bao_chua_doc"
+                android:title="Thông báo chưa đọc" />
+            <item
+                android:icon="@mipmap/ic_add_circle_128"
+                android:id="@+id/menu_soan_thong_bao"
+                android:title="Soạn thông báo" />
+
+        </menu>
+    </item>
+    <item android:title="Lịch">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_calendar_128"
+                android:id="@+id/menu_lich_co_quan"
+                android:title="Lịch cơ quan" />
+            <item
+                android:icon="@mipmap/ic_calendar_128"
+                android:id="@+id/menu_lich_ca_nhan"
+                android:title="Lịch cá nhân" />
+        </menu>
+    </item>
+
+    <item android:title="Vị trí">
+        <menu>
+            <item android:icon="@mipmap/ic_location_128"
+                android:id="@+id/menu_vi_tri"
+                android:title="Vị trí"/>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/dang_xuat">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_logout_128"
+                android:id="@+id/menu_dang_xuat"
+                android:title="@string/dang_xuat"/>
+        </menu>
+    </item>
+
+</menu>

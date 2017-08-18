@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/listview_lichcoquan_tieuDe"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="3"
+        android:text="Ban Lãnh Đạo làm việc tại trụ sở"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_lichcoquan_thongbao"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@mipmap/icon_alarm" />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/listview_lichcoquan_thoigianbatdau"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="9:00" />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/listview_lichcoquan_ngaybatdau"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="06/08/20017" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text=" - " />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:id="@+id/listview_lichcoquan_thoigianketthuc"
+            android:text="16:00" />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/listview_lichcoquan_ngayketthuc"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="06/08/2017" />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_lichcoquan_nguoidieuhanh"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/ic_personal_128" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/listview_lichcoquan_nguoidieuhanh"
+            android:text="Lưu Hoàng Long" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_lichcoquan_location"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@mipmap/icon_location" />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/listview_lichcoquan_diachi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Tầng 11, Tòa nhà Mipec, 229 Tây Sơn, Đống Đa, Hà Nội" />
+    </LinearLayout>
+
+
+</LinearLayout>
