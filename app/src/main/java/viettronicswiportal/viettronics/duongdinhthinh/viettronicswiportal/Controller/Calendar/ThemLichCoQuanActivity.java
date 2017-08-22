@@ -16,6 +16,7 @@ public class ThemLichCoQuanActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_them_lich_co_quan);
+        customBar();
     }
     private void customBar() {
         ActionBar actionBar = getSupportActionBar();

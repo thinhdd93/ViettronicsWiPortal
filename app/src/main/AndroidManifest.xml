@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controller.LoginActivity">
+        <activity android:name=".Controller.LoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,53 +18,74 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.VanBanDen.VanBanDenActivity"
             android:parentActivityName=".Controller.HomeActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.VanBanDen.ThemVanBanDenCanXuLyActivity"
             android:parentActivityName=".Controller.VanBanDen.VanBanDenActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.VanBanDen.ChiTietVanBanActivity"
             android:parentActivityName=".Controller.VanBanDen.VanBanDenActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.VanBanDi.VanBanDiActivity"
             android:parentActivityName=".Controller.HomeActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.ThongBao.ThongBaoActivity"
             android:parentActivityName=".Controller.HomeActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.ThongBao.ThemThongBaoActivity"
             android:parentActivityName=".Controller.ThongBao.ThongBaoActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.ThongBao.NoiDungThongBaoActivity"
             android:parentActivityName=".Controller.ThongBao.ThongBaoActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.TaiLieuLuuTru.TaiLieuLuuTruActivity"
             android:parentActivityName=".Controller.HomeActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.SinhNhat.ThongBaoSinhNhatActivity"
             android:parentActivityName=".Controller.HomeActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.Settings.ThietLapActivity"
             android:parentActivityName=".Controller.HomeActivity" />
-        <activity android:name=".Controller.Settings.DanhSachNguoiDungActivity"
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Controller.Settings.DanhSachNguoiDungActivity"
             android:parentActivityName=".Controller.Settings.ThietLapActivity"/>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.CongViec.CongViecActivity"
             android:parentActivityName=".Controller.HomeActivity" />
-        <activity android:name=".Controller.CongViec.ChiTietCongViecActivity"
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Controller.CongViec.ChiTietCongViecActivity"
             android:parentActivityName=".Controller.CongViec.CongViecActivity"/>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.Calendar.LichCaNhanActivity"
             android:parentActivityName=".Controller.HomeActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".Controller.Calendar.LichCoQuanActivity"
             android:parentActivityName=".Controller.HomeActivity" />
-        <activity android:name=".Controller.Calendar.ThemLichCoQuanActivity"></activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Controller.Calendar.ThemLichCoQuanActivity"
+            android:parentActivityName=".Controller.Calendar.LichCoQuanActivity"></activity>
     </application>
 
 </manifest>
