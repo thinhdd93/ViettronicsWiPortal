@@ -80,6 +80,7 @@
                         android:layout_marginRight="15dp"
                         android:hint="@string/ten_dang_nhap"
                         android:inputType="text"
+                        android:backgroundTint="@color/text_white"
                         android:textColor="@color/text_white"
                         android:textColorHint="@color/text_white" />
                 </android.support.design.widget.TextInputLayout>
@@ -110,6 +111,7 @@
                         android:id="@+id/edit_matkhau"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:backgroundTint="@color/text_white"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:hint="@string/mat_khau"
