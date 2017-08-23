@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/detail_Avatar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_centerVertical="true"
         android:src="@mipmap/ic_avatar_square" />
 
@@ -52,7 +52,7 @@
         android:layout_below="@id/detail_TenCanBo"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/detail_Avatar"
-        android:maxLines="1"
+        android:maxLines="2"
         android:text="Didpatched entreaties boisterous say why stimulated. Certain forbade picture now prevent carried she get see sitting."
         android:textSize="13dp" />
 
@@ -63,6 +63,6 @@
         android:layout_below="@id/detail_Comment"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/detail_Avatar"
-        android:text="28/07/2017 \t 10:09 AM"
+        android:text="28/07/2017 "
         android:textSize="13dp" />
 </RelativeLayout>

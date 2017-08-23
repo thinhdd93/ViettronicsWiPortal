@@ -13,6 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_below="@id/lvVanBanChoXuLy" />
+    <TextView
+        android:layout_below="@id/lvVanBanChoXuLy"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_ThemVanBanXuLy"

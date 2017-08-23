@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:inputType="textMultiLine"
-    android:maxLines="2"
+    android:maxLines="3"
     android:text="Greatly hearted has who believe. Drift allow green son walls years for blush."
     android:textSize="13dp" />
   <LinearLayout
