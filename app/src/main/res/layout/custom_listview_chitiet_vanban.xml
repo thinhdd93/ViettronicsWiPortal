@@ -72,12 +72,12 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Độ mật: "
-          android:textSize="12sp" />
+          android:textSize="12dp" />
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Thường"
-          android:textSize="12sp" />
+          android:textSize="12dp" />
       </LinearLayout>
 
       <LinearLayout
@@ -90,12 +90,12 @@
           android:layout_height="wrap_content"
           android:layout_marginLeft="15dp"
           android:text="Độ khẩn: "
-          android:textSize="12sp" />
+          android:textSize="12dp" />
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Thường"
-          android:textSize="12sp" />
+          android:textSize="12dp" />
       </LinearLayout>
       <LinearLayout
         android:layout_width="wrap_content"
@@ -107,12 +107,12 @@
           android:layout_height="wrap_content"
           android:layout_marginLeft="15dp"
           android:text="Ngày đến: "
-          android:textSize="12sp" />
+          android:textSize="12dp" />
         <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="28/07/2017"
-          android:textSize="12sp" />
+          android:textSize="12dp" />
       </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -125,13 +125,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Đơn vị ban hành: "
-        android:textSize="12sp" />
+        android:textSize="12dp" />
       <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="2"
         android:text="Tổng Công ty CP Điện tử và Tin học Việt Nam"
-        android:textSize="12sp" />
+        android:textSize="12dp" />
     </LinearLayout>
     <LinearLayout
       android:layout_width="match_parent"
@@ -143,20 +143,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ngày ban hành: "
-        android:textSize="12sp" />
+        android:textSize="12dp" />
       <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="27/07/2017"
-        android:textSize="12sp" />
+        android:textSize="12dp" />
       <TextView
-        android:textSize="12sp"
+        android:textSize="12dp"
         android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Thời hạn giải quyết: " />
       <TextView
-        android:textSize="12sp"
+        android:textSize="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="27/08/2017" />

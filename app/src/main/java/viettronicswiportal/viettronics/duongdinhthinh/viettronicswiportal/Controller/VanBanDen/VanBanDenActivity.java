@@ -69,10 +69,10 @@ public class VanBanDenActivity extends AppCompatActivity {
     }
 
     private void addControls() {
-        listview_VanBanDenChoXuLy = (ListView) findViewById(R.id.lvVanBanChoXuLy);
-        listview_VanBanDenDaXuLy = (ListView) findViewById(R.id.lvVanBanDaXuLy);
+        listview_VanBanDenChoXuLy = findViewById(R.id.lvVanBanChoXuLy);
+        listview_VanBanDenDaXuLy = findViewById(R.id.lvVanBanDaXuLy);
 
-        fab_ThemVanBanDenChoXuLy = (FloatingActionButton) findViewById(R.id.fab_ThemVanBanXuLy);
+        fab_ThemVanBanDenChoXuLy = findViewById(R.id.fab_ThemVanBanXuLy);
 
         addVanBanDenDaXuLy();
         addVanBanDenChuaXuLy();

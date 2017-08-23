@@ -25,7 +25,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="2"
-                    android:textSize="60sp"
+                    android:textSize="60dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -36,7 +36,7 @@
                     android:layout_gravity="center"
                     android:text="07/08/2017"
                     android:textColor="#f00"
-                    android:textSize="13sp" />
+                    android:textSize="13dp" />
             </LinearLayout>
             <TextView
                 android:layout_width="1dp"
@@ -70,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_marginLeft="5dp"
                         android:text="09:00"/>
                     <ImageView
@@ -79,7 +79,7 @@
                         android:src="@mipmap/ic_personal_128"
                         android:layout_marginLeft="40dp"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical"
@@ -96,7 +96,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/icon_location"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -114,7 +114,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/ic_settings_128"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
@@ -163,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="3"
-                    android:textSize="60sp"
+                    android:textSize="60dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -174,7 +174,7 @@
                     android:layout_gravity="center"
                     android:text="08/08/2017"
                     android:textColor="#f00"
-                    android:textSize="13sp" />
+                    android:textSize="13dp" />
             </LinearLayout>
             <TextView
                 android:layout_width="1dp"
@@ -208,7 +208,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_marginLeft="5dp"
                         android:text="09:00"/>
                     <ImageView
@@ -217,7 +217,7 @@
                         android:src="@mipmap/ic_personal_128"
                         android:layout_marginLeft="40dp"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical"
@@ -234,7 +234,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/icon_location"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -252,7 +252,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/ic_settings_128"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
@@ -301,7 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="4"
-                    android:textSize="60sp"
+                    android:textSize="60dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -312,7 +312,7 @@
                     android:layout_gravity="center"
                     android:text="09/08/2017"
                     android:textColor="#f00"
-                    android:textSize="13sp" />
+                    android:textSize="13dp" />
             </LinearLayout>
             <TextView
                 android:layout_width="1dp"
@@ -346,7 +346,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_marginLeft="5dp"
                         android:text="09:00"/>
                     <ImageView
@@ -355,7 +355,7 @@
                         android:src="@mipmap/ic_personal_128"
                         android:layout_marginLeft="40dp"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical"
@@ -372,7 +372,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/icon_location"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -390,7 +390,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/ic_settings_128"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
@@ -439,7 +439,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="5"
-                    android:textSize="60sp"
+                    android:textSize="60dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -450,7 +450,7 @@
                     android:layout_gravity="center"
                     android:text="10/08/2017"
                     android:textColor="#f00"
-                    android:textSize="13sp" />
+                    android:textSize="13dp" />
             </LinearLayout>
             <TextView
                 android:layout_width="1dp"
@@ -484,7 +484,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_marginLeft="5dp"
                         android:text="09:00"/>
                     <ImageView
@@ -493,7 +493,7 @@
                         android:src="@mipmap/ic_personal_128"
                         android:layout_marginLeft="40dp"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical"
@@ -510,7 +510,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/icon_location"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -528,7 +528,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/ic_settings_128"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
@@ -577,7 +577,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="6"
-                    android:textSize="60sp"
+                    android:textSize="60dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -588,7 +588,7 @@
                     android:layout_gravity="center"
                     android:text="11/08/2017"
                     android:textColor="#f00"
-                    android:textSize="13sp" />
+                    android:textSize="13dp" />
             </LinearLayout>
             <TextView
                 android:layout_width="1dp"
@@ -622,7 +622,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_marginLeft="5dp"
                         android:text="09:00"/>
                     <ImageView
@@ -631,7 +631,7 @@
                         android:src="@mipmap/ic_personal_128"
                         android:layout_marginLeft="40dp"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical"
@@ -648,7 +648,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/icon_location"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -666,7 +666,7 @@
                         android:layout_height="17dp"
                         android:src="@mipmap/ic_settings_128"/>
                     <TextView
-                        android:textSize="12sp"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"

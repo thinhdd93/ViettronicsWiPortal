@@ -15,7 +15,7 @@
       android:layout_height="fill_parent"
       android:text="Xử lý với chức danh: "
       android:gravity="center"
-      android:textSize="14sp"
+      android:textSize="14dp"
       style="@style/AlertDialog.AppCompat"
       />
     <Spinner
@@ -51,7 +51,7 @@
       android:layout_height="fill_parent"
       android:text="Tiêu đề: "
       android:gravity="center"
-      android:textSize="14sp"
+      android:textSize="14dp"
       style="@style/AlertDialog.AppCompat"
       />
     <EditText
@@ -59,7 +59,7 @@
       android:layout_height="wrap_content"
       android:id="@+id/congviec_edit_TieuDe"
       android:hint="Tiêu đề"
-      android:textSize="13sp"
+      android:textSize="13dp"
       android:inputType="textMultiLine"
       android:minLines="1"
       android:maxLines="5"/>
@@ -80,7 +80,7 @@
       android:layout_height="fill_parent"
       android:text="Nội dung xử lý: "
       android:gravity="center"
-      android:textSize="14sp"
+      android:textSize="14dp"
       style="@style/AlertDialog.AppCompat"/>
     <ImageView
       android:layout_width="25dp"
@@ -106,6 +106,6 @@
     android:inputType="textMultiLine"
     android:maxLines="30"
     android:minLines="5"
-    android:textSize="13sp" />
+    android:textSize="13dp" />
 
 </LinearLayout>

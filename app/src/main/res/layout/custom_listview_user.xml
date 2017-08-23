@@ -20,7 +20,7 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/detail_Avatar"
         android:text="Ông Vũ Hải Vĩnh"
-        android:textSize="13sp"
+        android:textSize="13dp"
         android:textStyle="bold" />
 
     <TextView
@@ -31,7 +31,7 @@
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/detail_TenCanBo"
         android:text="-"
-        android:textSize="13sp"
+        android:textSize="13dp"
         android:textStyle="bold" />
 
     <TextView
@@ -42,7 +42,7 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/detail_11"
         android:text="Phó Tổng Giám Đốc"
-        android:textSize="13sp"
+        android:textSize="13dp"
         android:textStyle="bold" />
 
     <TextView
@@ -53,8 +53,8 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/detail_Avatar"
         android:maxLines="1"
-        android:text="Dispatched entreaties boisterous say why stimulated. Certain forbade picture now prevent carried she get see sitting."
-        android:textSize="13sp" />
+        android:text="Didpatched entreaties boisterous say why stimulated. Certain forbade picture now prevent carried she get see sitting."
+        android:textSize="13dp" />
 
     <TextView
         android:id="@+id/detail_ThoiGian"
@@ -64,5 +64,5 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/detail_Avatar"
         android:text="28/07/2017 \t 10:09 AM"
-        android:textSize="13sp" />
+        android:textSize="13dp" />
 </RelativeLayout>

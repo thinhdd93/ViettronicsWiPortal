@@ -42,7 +42,7 @@
                     android:text="@string/van_ban_den"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -67,7 +67,7 @@
                     android:text="@string/tai_lieu_luu_tru"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -93,7 +93,7 @@
                     android:text="@string/lich_ca_nhan"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -129,7 +129,7 @@
                     android:text="@string/van_ban_di"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -155,7 +155,7 @@
                     android:text="@string/thong_bao_noi_bo"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -181,7 +181,7 @@
                     android:text="@string/sinh_nhat"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -216,7 +216,7 @@
                     android:text="@string/cong_viec"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -241,7 +241,7 @@
                     android:text="@string/lich_co_quan"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -267,7 +267,7 @@
                     android:text="@string/thiet_lap"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
 

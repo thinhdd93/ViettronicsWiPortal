@@ -38,7 +38,7 @@
         android:layout_marginLeft="10dp"
         android:gravity="center"
         android:text="Ban Tài Chính - Kế Toán"
-        android:textSize="12sp" />
+        android:textSize="12dp" />
     </LinearLayout>
     <LinearLayout
       android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
         android:layout_height="fill_parent"
         android:layout_marginLeft="10dp"
         android:gravity="center"
-        android:textSize="12sp"
+        android:textSize="12dp"
         android:text="Văn bản pháp luật" />
     </LinearLayout>
   </LinearLayout>
@@ -75,7 +75,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginLeft="10dp"
-      android:textSize="12sp"
+      android:textSize="12dp"
       android:layout_centerVertical="true"
       android:layout_toRightOf="@id/tailieu_img_NgayUpload"
       android:text="03/08/2017" />
@@ -93,7 +93,7 @@
       android:layout_centerVertical="true"
       android:layout_toRightOf="@id/tailieu_img_HoanThanh"
       android:layout_marginLeft="10dp"
-      android:textSize="12sp"
+      android:textSize="12dp"
       android:text="__/__/____"/>
 
     <ImageView

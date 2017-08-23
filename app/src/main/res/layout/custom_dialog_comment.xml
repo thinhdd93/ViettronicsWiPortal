@@ -9,7 +9,7 @@
     android:layout_height="wrap_content"
     android:text="Người gửi:"
     style="@style/AlertDialog.AppCompat"
-    android:textSize="15sp"/>
+    android:textSize="15dp"/>
   <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
       android:layout_height="wrap_content"
       android:text="Chức vụ:"
       style="@style/AlertDialog.AppCompat"
-      android:textSize="15sp"/>
+      android:textSize="15dp"/>
     <Spinner
       android:id="@+id/dialog_spinner_ChucVu"
       android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
     android:layout_height="wrap_content"
     android:text="Nội dung:"
     style="@style/AlertDialog.AppCompat"
-    android:textSize="15sp"/>
+    android:textSize="15dp"/>
   <EditText
     android:id="@+id/edit_BinhLuan"
     android:layout_width="match_parent"

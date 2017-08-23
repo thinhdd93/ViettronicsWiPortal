@@ -9,6 +9,6 @@
     android:layout_height="wrap_content"
     android:text="TextView"
     style="@style/AlertDialog.AppCompat"
-    android:textSize="13sp"
+    android:textSize="13dp"
     android:textStyle="italic"/>
 </LinearLayout>

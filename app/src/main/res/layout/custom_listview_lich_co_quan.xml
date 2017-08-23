@@ -30,7 +30,7 @@
             android:src="@mipmap/icon_alarm" />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:id="@+id/listview_lichcoquan_thoigianbatdau"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -39,7 +39,7 @@
             android:text="9:00" />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:id="@+id/listview_lichcoquan_ngaybatdau"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -48,14 +48,14 @@
             android:text="06/08/20017" />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:gravity="center"
             android:text=" - " />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:gravity="center"
@@ -63,7 +63,7 @@
             android:text="16:00" />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:id="@+id/listview_lichcoquan_ngayketthuc"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -78,7 +78,7 @@
             android:src="@mipmap/ic_personal_128" />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_marginLeft="10dp"
@@ -103,7 +103,7 @@
             android:src="@mipmap/icon_location" />
 
         <TextView
-            android:textSize="12sp"
+            android:textSize="12dp"
             android:id="@+id/listview_lichcoquan_diachi"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
