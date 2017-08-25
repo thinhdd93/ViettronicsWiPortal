@@ -1,24 +1,31 @@
 package viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.VanBanDen;
 
+import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Model.VanBanDen.AdapterUsersPhoiHopXuLyGiamSat;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Model.VanBanDen.NguoiXuLyPhoiHopGiamSat;
@@ -27,6 +34,7 @@ import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.R;
 public class ThemVanBanDenCanXuLyActivity extends AppCompatActivity {
 
     private Spinner sp_ChucVu;
+    private TextView txtNgayGiaoViec, txtNgayHoanThanh;
     private ImageView img_Send, img_NgayGiaoViec,
             img_NgayHoanThanh, img_NguoiXuLyChinh, img_NguoiPhoiHop,
             img_NguoiGiamSat, img_DinhKemNoiDungChiDao;
@@ -45,6 +53,9 @@ public class ThemVanBanDenCanXuLyActivity extends AppCompatActivity {
     private AdapterUsersPhoiHopXuLyGiamSat adapterNguoiXuLy, adapterNguoiPhoiHop, adapterNguoiGiamSat;
     private ArrayList<NguoiXuLyPhoiHopGiamSat> listNguoiXuLy, listNguoiPhoiHop, listNguoiGiamSat;
 
+    private Calendar calendar;
+    private Date ngayGiaoViec, ngayHoanThanh;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +66,7 @@ public class ThemVanBanDenCanXuLyActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+        getDateDefault();
         img_NguoiXuLyChinh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,6 +85,19 @@ public class ThemVanBanDenCanXuLyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 creatDialogThemNguoiGiamSat();
+            }
+        });
+
+        img_NgayGiaoViec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                chonNgayGiaoViec();
+            }
+        });
+        img_NgayHoanThanh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                chonNgayHoanThanh();
             }
         });
     }
@@ -110,6 +135,14 @@ public class ThemVanBanDenCanXuLyActivity extends AppCompatActivity {
         adapterNguoiGiamSat = new AdapterUsersPhoiHopXuLyGiamSat(ThemVanBanDenCanXuLyActivity.this,
                 R.layout.custom_listview_nguoi_xuly_phoihop_giamsat, listNguoiGiamSat);
         listview_NguoiGiamSat.setAdapter(adapterNguoiGiamSat);
+
+
+        /*Ngày giao việc và hoàn thành*/
+        txtNgayGiaoViec = findViewById(R.id.themVanBan_NgayGiao);
+        txtNgayHoanThanh = findViewById(R.id.themVanBan_NgayHoanThanh);
+        img_NgayGiaoViec = findViewById(R.id.themVanBan_img_NgayGiao);
+        img_NgayHoanThanh = findViewById(R.id.themVanBan_img_NgayHoanThanh);
+
     }
 
     private void customBar() {
@@ -132,6 +165,66 @@ public class ThemVanBanDenCanXuLyActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.setStatusBarColor(getBaseContext().getResources().getColor(R.color.text_black));
         }
+    }
+
+    private void getDateDefault() {
+        calendar = Calendar.getInstance();
+        SimpleDateFormat dateFormat = null;
+        /*Định dạng ngày tháng năm */
+        dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        String dateDefault = dateFormat.format(calendar.getTime());
+        txtNgayHoanThanh.setText(dateDefault);
+        txtNgayGiaoViec.setText(dateDefault);
+        ngayHoanThanh = calendar.getTime();
+        ngayGiaoViec = calendar.getTime();
+    }
+
+
+    private void chonNgayGiaoViec() {
+        DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dateOfMonth) {
+                txtNgayGiaoViec.setText(dateOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                calendar.set(year, monthOfYear, dateOfMonth);
+                ngayGiaoViec = calendar.getTime();
+            }
+        };
+
+        String s = txtNgayGiaoViec.getText() + "";
+        String strArr[] = s.split("/");
+        int ngay = Integer.parseInt(strArr[0]);
+        int thang = Integer.parseInt(strArr[1]) - 1;
+        int nam = Integer.parseInt(strArr[2]);
+        DatePickerDialog dialog = new DatePickerDialog(ThemVanBanDenCanXuLyActivity.this,
+                dateSetListener,
+                nam,
+                thang,
+                ngay);
+        dialog.setTitle("Ngày bắt đầu");
+        dialog.show();
+    }
+
+    private void chonNgayHoanThanh() {
+        DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dateOfMonth) {
+                txtNgayHoanThanh.setText(dateOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                calendar.set(year, monthOfYear, dateOfMonth);
+                ngayHoanThanh = calendar.getTime();
+            }
+        };
+        String s = txtNgayGiaoViec.getText() + "";
+        String strArr[] = s.split("/");
+        int ngay = Integer.parseInt(strArr[0]);
+        int thang = Integer.parseInt(strArr[1]) - 1;
+        int nam = Integer.parseInt(strArr[2]);
+        DatePickerDialog dialog = new DatePickerDialog(ThemVanBanDenCanXuLyActivity.this,
+                dateSetListener,
+                nam,
+                thang,
+                ngay);
+        dialog.setTitle("Ngày hoàn thành");
+        dialog.show();
     }
 
     /*Tạo Custom Dialog thêm người xử lý*/
