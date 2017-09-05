@@ -148,7 +148,7 @@
             android:textSize="13sp"
             android:layout_marginLeft="10dp"
             android:inputType="textMultiLine"
-            android:minLines="3"
+            android:minLines="5"
             android:gravity="top|left"
             android:maxLines="20"/>
     </LinearLayout>

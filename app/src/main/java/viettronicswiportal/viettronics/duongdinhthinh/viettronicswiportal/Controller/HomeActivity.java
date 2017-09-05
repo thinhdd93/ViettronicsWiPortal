@@ -24,6 +24,7 @@ import android.widget.TextView;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.Calendar.LichCaNhanActivity;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.Calendar.LichCoQuanActivity;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.CongViec.CongViecActivity;
+import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.Location.MapsActivity;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.Settings.ThietLapActivity;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.SinhNhat.ThongBaoSinhNhatActivity;
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.TaiLieuLuuTru.TaiLieuLuuTruActivity;
@@ -66,6 +67,7 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
     private void addEvents() {
         img_VanBanDen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -350,6 +352,8 @@ public class HomeActivity extends AppCompatActivity
                 xuLyLichCaNhan();
                 break;
             case R.id.menu_vi_tri:
+                Intent intentLocation = new Intent(HomeActivity.this, MapsActivity.class);
+                startActivity(intentLocation);
                 break;
 
             default:

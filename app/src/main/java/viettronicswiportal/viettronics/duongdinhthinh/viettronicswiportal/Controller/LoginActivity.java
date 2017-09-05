@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 import viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.R;
 
@@ -27,12 +28,19 @@ public class LoginActivity extends AppCompatActivity {
         addControls();
         addEvents();
     }
+
     private void addEvents() {
         button_DangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                startActivity(intent);
+                if (edit_TenDangNhap.getText().toString().equals("admin")
+                        && edit_MatKhau.getText().toString().equals("admin")) {
+                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                } else if (!edit_MatKhau.getText().toString().equals("admin")
+                        || !edit_TenDangNhap.getText().toString().equals("admin")) {
+                    Toast.makeText(LoginActivity.this, "Sai thông tin đăng nhập", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

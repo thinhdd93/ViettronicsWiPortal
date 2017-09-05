@@ -691,7 +691,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:textSize="11dp"
-                        android:maxLines="2"
+                        android:maxLines="3"
                         android:layout_marginLeft="5dp"
                         android:text="Bùi Mạnh Hùng; Vũ Hải Vĩnh; Lê Anh Tuấn"/>
                 </LinearLayout>

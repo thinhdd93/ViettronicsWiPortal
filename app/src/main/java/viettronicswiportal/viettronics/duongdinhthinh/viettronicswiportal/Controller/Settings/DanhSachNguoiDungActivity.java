@@ -43,7 +43,7 @@ public class DanhSachNguoiDungActivity extends AppCompatActivity {
         listUsers.add(new Users("Lưu Hoàng Long",
                 "Tổng Giám Đốc",
                 "Ban Tổng giám đốc",
-                "luuhoangloang@viettronics.vn"));
+                "luuhoanglong@viettronics.vn"));
         listUsers.add(new Users("Vũ Hải Vĩnh",
                 "Phó Tổng Giám Đốc",
                 "Ban Tổng giám đốc",
@@ -77,7 +77,7 @@ public class DanhSachNguoiDungActivity extends AppCompatActivity {
                 "Ban Kinh doanh",
                 "phamnguyenanh@viettronics.vn"));
         listUsers.add(new Users("Nguyễn Mạnh Hà",
-                "Chuyên vien",
+                "Chuyên viên",
                 "Ban Công nghệ",
                 "nguyenmanhha@viettronics.vn"));
         adapterUsers.notifyDataSetChanged();

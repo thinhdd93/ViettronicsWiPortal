@@ -16,7 +16,7 @@
         style="@style/AlertDialog.AppCompat"
         android:textStyle="bold"
         android:inputType="textMultiLine"
-        android:maxLines="2"
+        android:maxLines="3"
         android:textSize="13dp"
         android:layout_height="wrap_content"
         />

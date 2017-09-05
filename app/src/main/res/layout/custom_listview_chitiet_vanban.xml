@@ -195,7 +195,7 @@
       <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="3"
+        android:maxLines="5"
         android:text="Ông Nguyễn Quốc Huy; Ông Nguyễn Anh Tùng; Bà Đỗ Thị Thúy Hương; Ông Vũ Hải Vĩnh;"/>
     </LinearLayout>
 

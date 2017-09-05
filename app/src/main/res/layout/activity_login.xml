@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/blurred"
     android:layout_height="match_parent"
+    android:background="@drawable/blurred"
     tools:context="viettronicswiportal.viettronics.duongdinhthinh.viettronicswiportal.Controller.LoginActivity">
 
     <LinearLayout
@@ -78,9 +78,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
+                        android:backgroundTint="@color/text_white"
                         android:hint="@string/ten_dang_nhap"
                         android:inputType="text"
-                        android:backgroundTint="@color/text_white"
                         android:textColor="@color/text_white"
                         android:textColorHint="@color/text_white" />
                 </android.support.design.widget.TextInputLayout>
@@ -92,9 +92,9 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_gravity="center"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="15dp"
                     android:src="@mipmap/ic_lock_128" />
 
@@ -111,16 +111,14 @@
                         android:id="@+id/edit_matkhau"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/text_white"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
+                        android:backgroundTint="@color/text_white"
                         android:hint="@string/mat_khau"
                         android:inputType="textPassword"
-                        android:textColor="@color/text_white"/>
+                        android:textColor="@color/text_white" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
-
-
         </LinearLayout>
 
         <Button
