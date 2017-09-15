@@ -233,7 +233,7 @@ public class HomeActivity extends AppCompatActivity
     }
 
     private void addControls() {
-        img_VanBanDen = (ImageView) findViewById(R.id.img_VanBanDen);
+       /* img_VanBanDen = (ImageView) findViewById(R.id.img_VanBanDen);
         img_VanBanDi = (ImageView) findViewById(R.id.img_VanBanDi);
         img_CongViec = (ImageView) findViewById(R.id.img_CongViec);
         img_TaiLieuLuuTru = (ImageView) findViewById(R.id.img_TaiLieuLuuTru);
@@ -251,8 +251,29 @@ public class HomeActivity extends AppCompatActivity
         text_LichCoQuan = (TextView) findViewById(R.id.text_LichCoQuan);
         text_LichCaNhan = (TextView) findViewById(R.id.text_LichCaNhan);
         text_SinhNhat = (TextView) findViewById(R.id.text_SinhNhat);
-        text_ThietLap = (TextView) findViewById(R.id.text_ThietLap);
+        text_ThietLap = (TextView) findViewById(R.id.text_ThietLap);*/
+
+       img_VanBanDen = findViewById(R.id.img_VanBanDen);
+       img_VanBanDi = findViewById(R.id.img_VanBanDi);
+       img_CongViec = findViewById(R.id.img_CongViec);
+       img_TaiLieuLuuTru = findViewById(R.id.img_TaiLieuLuuTru);
+       img_ThongBaoNoiBo = findViewById(R.id.img_ThongBaoNoiBo);
+       img_LichCaNhan = findViewById(R.id.img_LichCaNhan);
+       img_LichCoQuan = findViewById(R.id.img_LichCoQuan);
+       img_SinhNhat = findViewById(R.id.img_SinhNhat);
+       img_ThietLap = findViewById(R.id.img_ThietLap);
+
+       text_VanBanDen = findViewById(R.id.text_VanBanDen);
+       text_VanBanDi = findViewById(R.id.text_VanBanDi);
+       text_CongViec = findViewById(R.id.text_CongViec);
+       text_TaiLieuLuuTru = findViewById(R.id.text_TaiLieuLuuTru);
+       text_ThongBaoNoiBo = findViewById(R.id.text_ThongBaoNoiBo);
+       text_LichCaNhan = findViewById(R.id.text_LichCaNhan);
+       text_LichCoQuan = findViewById(R.id.text_LichCoQuan);
+       text_SinhNhat = findViewById(R.id.text_SinhNhat);
+       text_ThietLap = findViewById(R.id.text_ThietLap);
     }
+
 
     private void customBar() {
         ActionBar actionBar = getSupportActionBar();
@@ -285,6 +306,8 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
+        this.finish();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -302,7 +325,7 @@ public class HomeActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.menu_dang_xuat:
-                HomeActivity.this.finish();
+                android.os.Process.killProcess(android.os.Process.myPid());
                 break;
             case R.id.menu_trang_chu:
                 break;
@@ -355,7 +378,6 @@ public class HomeActivity extends AppCompatActivity
                 Intent intentLocation = new Intent(HomeActivity.this, MapsActivity.class);
                 startActivity(intentLocation);
                 break;
-
             default:
         }
 

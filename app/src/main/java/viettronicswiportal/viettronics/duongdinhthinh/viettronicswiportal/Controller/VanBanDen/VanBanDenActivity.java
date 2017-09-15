@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -46,6 +47,19 @@ public class VanBanDenActivity extends AppCompatActivity {
         addControls();
         addEvents();
     }
+
+    /**
+     *Khi bấm back button trên toolbar => kill activity để giải phóng ram
+     **/
+    /*@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                android.os.Process.killProcess(android.os.Process.myPid());
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }*/
 
     private void addEvents() {
         fab_ThemVanBanDenChoXuLy.setOnClickListener(new View.OnClickListener() {
